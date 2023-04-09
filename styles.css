@@ -251,8 +251,8 @@ figure {
 }
 
 .grid-item img {
-    width: 650px;
-    height: 600px;
+    width: 65%;
+    height: 60%;
 } 
 
 #contact {
@@ -328,51 +328,19 @@ figure {
     }
 }
 
+@media only screen and (max-width: 760px) {
+    #navlist {
+        margin-top: 30px;
+    }
 
-@media only screen and (max-width: 600px) {
     .line-1 {
-        width: 15em;
-        font-size: 200%;
-    }
+        font-size: 45px;
+    }    
 
-    .fa {
-        padding: 10px;
-    }
-
-    .certifications img {
-        width: 95%;
-        height: 95%;
-    }
-
-    .grid-item {
-        width: 90%;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-
-    #author {
-        width: 70%;
-        height: 70%;
-    }
-
-    #author_bio div {
-        display: -ms-inline-grid;
-        place-items: center;
-    }
-
-    #description {
-        padding-left: 15px;
-        padding-right: 25px;
-        font-size: 18px;
-    }
-
-    figure {
-        padding-left: 5%;
-        margin-left: 0;
-    }
-
-    #education, #quote {
-        padding-right: 25px;
-        padding-left: 25px;
+    #description, #education {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 20px;
     }
 }
 
