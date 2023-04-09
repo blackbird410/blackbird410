@@ -17,10 +17,13 @@ body {
     margin-left: 0;
     margin-right: 0;
     width: 100%;
+    height: 100%;
 }
 
 #navbar {
-    margin-top: 18px;
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 5px;
     overflow: hidden;
     position: fixed; 
     background: rgba(0, 0, 0, 0.39);
@@ -52,8 +55,8 @@ body {
     color: yellow;
     text-align: center;
     font-family: roboto;
-    font-weight: 100;
-    font-size: 1.5rem;
+    font-size: 60%;
+    font-weight: bold;
     text-decoration: none;
     padding: 14px 16px;
     transition: .2s transform ease-in-out;
@@ -77,13 +80,11 @@ body {
 #home {
     text-align: center;
     padding: 0;
-    margin-top: -50px;
+    margin-top: -80px;
     height: 800px;
     width: 100%;
-    /*
-    Shortcut => animation colorChange 5s linear 2s infinite alternate-reverse ease both
-    */
     animation: changeBg 100s infinite ease-out;
+    animation-delay: 5s;
     transition: opacity 1s;
     transition-delay: 5s;
 }
@@ -91,14 +92,13 @@ body {
 .line-1 {
     font-family: Anonymous Pro, cursive;
     font-weight: bold;
-    font-size: 280%;
+    font-size: 80px;
     color: beige;
     margin-bottom: 0;
     padding-left: 40px;
     position: relative;
     top: 50%;  
-    width: 24em;
-    border-right: 2px solid rgba(255,255,255,.75);
+    width: 20em;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
@@ -131,9 +131,6 @@ h2 {
     animation-direction: alternate-reverse;
     animation-timing-function: ease;
     animation-fill-mode: both;
-    /*
-    Shortcut => animation colorChange 5s linear 2s infinite alternate-reverse ease both
-    */
 }
 
 img {
@@ -152,12 +149,6 @@ img {
     box-shadow: 0 12px 25px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-figure {
-    position: relative;
-    animation: slide 3s ease 2s infinite alternate backwards;
-}
-
-
 #about {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: antiquewhite;
@@ -167,12 +158,15 @@ figure {
     padding: 2px 15px;
     padding-bottom: 15px;
     width: 100%;
+    padding-left: 0;
 }
 
 #about h1 {
     text-align: center;
     text-decoration: underline;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
+    font-size: 30px;
+    color: white;
 }
 
 #about p {
@@ -202,15 +196,23 @@ figure {
     z-index: 1;
 }
 
+#education {
+    background-color: gray;
+    padding-top: 2px;
+    padding-bottom: 5px;
+}
+
 .skills {
-    width: 80%;
+    width: 100%;
+    padding-bottom: 10px;
     padding: auto;
     margin: auto;
     max-width: 600px;
 }
 
 .sk-container {
-    text-align: center;
+    text-align: left;
+    text-indent: 7px;
     padding: auto;
     margin: 10px auto 5px auto;
     width: 80%;
@@ -232,6 +234,10 @@ figure {
 .git {width: 10%;}
 .github {width: 20%;}
 .vs_code {width: 30%;}
+.english {width: 95%;}
+.french {width: 85%;}
+.chinese {width: 60%;}
+.spanish {width: 40%;}
 
 .certifications {
     display: grid;
@@ -240,12 +246,13 @@ figure {
 
 .grid-item {
     background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-    border-radius: 25px;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .grid-item img {
-    width: 750px;
-    height: 750px;
+    width: 650px;
+    height: 600px;
 } 
 
 #contact {
@@ -304,19 +311,6 @@ figure {
 }
 
 @media only screen and (min-width: 768px) {
-    /* Design for PCs*/ 
-    #home {
-        margin-top: -80px;
-    }
-
-    #navbar {
-        margin-top: 0px;
-    }
-
-    .line-1 {
-        font-size: 80px;
-    }
-
     #description {
         padding: 20px 90px 0px 0px;
         font-size: 22px;
@@ -332,25 +326,13 @@ figure {
         display: inline-flex;
         place-items: center;
     }
-
-    .grid-item {
-        width: 80%;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
 }
 
 
-@media only screen and (max-width: 760px) {
-    /*Phone and PCs*/
-    
+@media only screen and (max-width: 600px) {
     .line-1 {
         width: 15em;
         font-size: 200%;
-    }
-
-    .navlink {
-        font-size: 60%;
-        font-weight: bold;
     }
 
     .fa {
