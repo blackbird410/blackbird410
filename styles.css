@@ -328,13 +328,18 @@ figure {
     }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 600px) {
+
     #navlist {
         margin-top: 30px;
     }
 
+    .navlink {
+        font-size: 40%;
+    }
+
     .line-1 {
-        font-size: 45px;
+        font-size: 40px;
     }    
 
     #description, #education {
