@@ -7,8 +7,10 @@
 
 html {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0%;
+    padding-top: 3%;
     overflow-x: hidden;
 }
 
@@ -21,31 +23,27 @@ body {
 }
 
 #navbar {
-    margin-top: 0px;
-    padding-top: 10px;
-    padding-bottom: 5px;
     overflow: hidden;
     position: fixed; 
     background: rgba(0, 0, 0, 0.39);
     width: 100%;
     z-index: 2;
+
 }
 
 #navlist {
     display: flex;
-    float: right;
+    float: center;
     list-style-type: none;
-    margin: 0;
     background-color: transparent;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 25px;
-    padding-right: 70px;
+    padding-top: 5px;
 }
 
 #navlist li {
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
 .navlink {
@@ -54,11 +52,9 @@ body {
     display: block;
     color: yellow;
     text-align: center;
-    font-family: roboto;
-    font-size: 60%;
-    font-weight: bold;
+    font-size: 50%;
     text-decoration: none;
-    padding: 14px 16px;
+    padding: 10px;
     transition: .2s transform ease-in-out;
     animation: shake 0.82s infinite cubic-bezier(.36, .07, .19, .97) both;
     will-change: transform;
@@ -92,13 +88,13 @@ body {
 .line-1 {
     font-family: Anonymous Pro, cursive;
     font-weight: bold;
-    font-size: 80px;
+    font-size: 45px;
     color: beige;
     margin-bottom: 0;
     padding-left: 40px;
     position: relative;
     top: 50%;  
-    width: 20em;
+    width: 70%;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
@@ -150,15 +146,12 @@ img {
 }
 
 #about {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: antiquewhite;
-    /*background-color: #0093E9;
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);*/
     background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
-    padding: 2px 15px;
-    padding-bottom: 15px;
     width: 100%;
     margin: 0;
+    padding-top: 15px;
     padding-left: 0;
 }
 
@@ -166,19 +159,21 @@ img {
     text-align: center;
     text-decoration: underline;
     margin-bottom: 3px;
-    font-size: 30px;
+    font-size: 24px;
     color: white;
 }
 
 #about p {
     text-align: justify;
     margin-top: 0;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 #about a {
     text-decoration: none;
     color: darkorange;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 #about a:hover {
@@ -199,6 +194,7 @@ figure {
 
 #education {
     background-color: gray;
+    color: white;
     padding-top: 2px;
     padding-bottom: 5px;
 }
@@ -208,7 +204,11 @@ figure {
     padding-bottom: 10px;
     padding: auto;
     margin: auto;
-    max-width: 600px;
+    max-width: 500px;
+}
+
+.skill-header {
+    font-size: 20px;
 }
 
 .sk-container {
@@ -229,12 +229,12 @@ figure {
 
 .html {width: 60%;}
 .css {width: 40%;}
-.javascript {width: 20%;}
-.cpp {width: 15%;}
+.javascript {width: 30%;}
+.cpp {width: 25%;}
 .python {width: 45%;}
-.git {width: 10%;}
-.github {width: 20%;}
-.vs_code {width: 30%;}
+.git {width: 45%;}
+.github {width: 55%;}
+.vs_code {width: 70%;}
 .english {width: 95%;}
 .french {width: 85%;}
 .chinese {width: 60%;}
@@ -290,12 +290,17 @@ figure {
     height: 60%;
 } 
 
+footer {
+    width: 100%;
+}
+
 #contact {
     text-align: center;
-    padding: 2px;
-    margin: -15px 0px -10px 0px;
+    margin: 0px;
     width: 100%;
-    background-color: #00DBDE;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: -10px;
     background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
 }
 
@@ -304,10 +309,11 @@ figure {
 }
 
 .fa {
-    padding: 15px;
+    padding: 6px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
+    margin: 5px;
 }
 
 .fa:hover {
@@ -326,8 +332,11 @@ figure {
 
 .fa-linkedin-square {
     background-color: white;
+    border-radius: 8px;
     color:  #0A66C2;
-
+    padding: 4px;
+    padding-bottom: 2px;
+    padding-top: 2px;
 }
 
 .fa-instagram {
@@ -362,22 +371,17 @@ figure {
 
 @media only screen and (max-width: 600px) {
     #navlist {
-        margin-top: 55px;
+        margin-top: 45px;
+        margin-bottom: 5px;
         padding-right: 0;
-    }
-
-    .navlink {
-        font-size: 40%;
     }
 
     .line-1 {
         font-size: 25px;
     }    
 
-    #description, #education {
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size: 20px;
+    .about p {
+        font-size: 8px;
     }
 }
 
