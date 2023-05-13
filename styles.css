@@ -157,7 +157,7 @@ h2 {
 }
 
 .card {
-    flex: 0 1 300px;
+    flex: 0 1 320px;
     text-align: justify;
 }
 
@@ -368,6 +368,28 @@ h2 {
 @media only screen and (max-width: 600px) {
     .line-1 {
         font-size: 24px;
+    }
+
+    #author_bio {
+        flex-direction: column;
+    }
+
+    .left {
+        flex: 1 1 auto;
+        background-color: transparent;
+    }
+
+    #quote {
+        width: 300px;
+    }
+
+    #pic {
+        flex: 1 1 400px;
+        text-align: center;
+    }
+
+    .card {
+        flex: 0 1 450px;
     }
 }
 
