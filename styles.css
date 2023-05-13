@@ -6,20 +6,15 @@
 }
 
 html {
-    display: block;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding: 0%;
-    padding-top: 2%;
+    display: flex;
+    padding: 0;
+    margin: 0;
     overflow-x: hidden;
 }
 
 body {
     background-color: rgb(25, 25, 25);
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-    height: 100%;
+    margin: 0;
 }
 
 #navbar {
@@ -27,40 +22,39 @@ body {
     position: fixed; 
     background: rgba(0, 0, 0, 0.39);
     width: 100%;
-    z-index: 2;
-
+    padding: 16px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
 #navlist {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 12px;
     list-style-type: none;
     background-color: transparent;
-    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    align-items: center;
+    
 }
 
 #navlist li {
     flex: 0 1 auto;
-    margin: 10px;
 }
 
 .navlink {
     border: 2px solid currentColor;
     border-radius: 3rem;
-    display: block;
     color: yellow;
     text-align: center;
     font-size: 65%;
     font-weight: bolder;
     text-decoration: none;
     padding: 10px;
-    transition: .2s transform ease-in-out;
-    animation: shake 0.82s infinite cubic-bezier(.36, .07, .19, .97) both;
-    will-change: transform;
-    z-index: 0;
 }
 
 .navlink:hover {
@@ -73,12 +67,15 @@ body {
     animation: none;
     backface-visibility: hidden;
     perspective: 1000px;
+    padding: 14px;
 }
 
 #home {
-    margin-top: -80px;
-    height: 800px;
-    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10%;
+    height: 100vh;
     animation: changeBg 100s infinite ease-out;
     animation-delay: 5s;
     transition: opacity 1s;
@@ -90,12 +87,8 @@ body {
     font-weight: bold;
     font-size: 45px;
     color: beige;
-    margin-bottom: 0;
-    padding-left: 15%;
-    padding-right: auto;
+    margin: 0;
     position: relative;
-    top: 50%;  
-    width: 70%;
     text-align: center;
     white-space: nowrap;
     overflow: hidden; 
@@ -118,52 +111,54 @@ h2 {
     text-align: center;
 }
 
-#home h3 {
-    position: relative;
-    animation-name: colorChange;
-    animation-duration: 5s;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-    animation-timing-function: ease;
-    animation-fill-mode: both;
+#about {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: antiquewhite;
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+    width: 100%;
 }
 
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    border-radius: 12px;
-    padding-top: 5px;
-    padding-bottom: 10px;
+#author_bio {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
+
 
 #author {
-    width: 35%;
-    max-width: 300px;
+    max-width: 220px;
     padding: 0;
     border-radius: 15%;
     box-shadow: 0 12px 25px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#author_bio {
+.left {
     display: flex;
-    flex-direction: column;
-}
-
-#author_bio figure, #description {
-    flex: 1;
-}
-
-#about {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: antiquewhite;
-    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
-    width: 100%;
+    justify-content: flex-start;
+    height: 100%;
     margin: 0;
-    padding-top: 15px;
-    padding-left: 0;
+    padding: 16px;
+    background-color: grey;
+}
+
+.right {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+}
+
+.card {
+    flex: 0 1 300px;
+    text-align: justify;
 }
 
 #about h1 {
@@ -192,30 +187,46 @@ img {
 }
 
 #quote {
+    flex: 1;
+    align-self: center;
     font-family: Andale Mono, monospace;
     text-align: center;
     color: gold;
 }
 
-figure {
-    margin-right: 0;
-    padding-right: 0;
-    z-index: 1;
-}
+
 
 #education {
     background-color: gray;
     color: white;
-    padding-top: 2px;
-    padding-bottom: 5px;
+    margin: 0;
+    padding: 16px;
+}
+
+#education ul {
+    margin: 0;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+#education ul li {
+    flex: 1 0 280px;
 }
 
 .skills {
-    width: 100%;
-    padding-bottom: 10px;
-    padding: auto;
-    margin: auto;
-    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 16px;
+    margin: 0;
+    border-bottom: outset;
+}
+
+.skill-card {
+    flex: 1 0 300px;
 }
 
 .skill-header {
@@ -252,77 +263,61 @@ figure {
 .spanish {width: 40%;}
 
 .certifications {
-    display: grid;
-    place-items: center;
-    width: 100%;
-    margin-bottom: 0;
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 16px;
+    gap: 16px;
+    border-bottom: outset;
+}
+
+.certifications img, #projects img {
+    flex: 1 0 auto;
+    width: 350px;
+    max-width: 500px;
+}
+
+.certifications img:hover, #projects img:hover {
+    width: 450px;
 }
 
 #projects {
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.project {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: baseline;
+    justify-content: center;
     text-align: center;
-    margin: 0 auto;
-    padding: 20px 20px;
-  }
-  
-  .project img {
-    flex: 1;
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    object-fit: contain;
-    border-radius: 10px;
-  }
-  
-  .project::after {
-    content: "";
-    width: 350px;
-  }
-
-.grid-item {
-    display: flex;
-    width: 100%;
-    padding-bottom: 30px;
-    flex-direction: column;
-    
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
 }
 
-.grid-item img {
-    width: 65%;
-    max-width: 600px;
-    height: auto;
-    flex: 1;
-} 
+#projects a {
+    flex: 1 0 auto;
+}
 
-footer {
-    width: 100%;
+#projects img {
+    border-radius: 16px;
 }
 
 #contact {
     margin: 0px;
-    width: 100%;
-    padding: 5px;
-    margin-bottom: -10px;
-    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    padding: 8px;
+    background-color: #3b3b4f;
 }
 
 #icons-container {
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 5px;
 }
 
-#contact li {
-    display: inline;
+#icons-container li {
+    flex: 0 1 auto;
 }
 
 .fa {
@@ -349,11 +344,9 @@ footer {
 
 .fa-linkedin-square {
     background-color: white;
-    border-radius: 8px;
+    border-radius: 100%;
     color:  #0A66C2;
-    padding: 4px;
-    padding-bottom: 2px;
-    padding-top: 2px;
+    padding: 8px;
 }
 
 .fa-instagram {
@@ -365,40 +358,16 @@ footer {
 
 .fa-github-square {
     background-color: transparent;
-    color: black;
+    color:aliceblue;
 }
 
-@media only screen and (min-width: 768px) {
-    #description {
-        padding: 20px 90px 0px 0px;
-        font-size: 22px;
-    } 
+@media only screen and (min-width: 768px) {    
     
-    #about ul {
-        padding-left: 10%;
-        padding-right: 10%;
-        font-size: 22px;
-    }
-
-    #author_bio div {
-        display: inline-flex;
-        place-items: center;
-    }
 }
 
 @media only screen and (max-width: 600px) {
-    #navlist {
-        margin-top: 45px;
-        margin-bottom: 5px;
-        justify-content: center;
-    }
-
     .line-1 {
-        font-size: 25px;
-    }    
-
-    .about p {
-        font-size: 8px;
+        font-size: 24px;
     }
 }
 

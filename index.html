@@ -8,16 +8,14 @@
         <title>Portfolio</title>
     </head>
     <body>
-        <header>
-            <nav id="navbar">
-                <ul id="navlist">
-                    <li><a class="navlink" href="#home">HOME</a></li>
-                    <li><a class="navlink" href="#about">ABOUT</a></li>
-                    <li><a class="navlink" href="#projects" >PROJECTS</a></li>
-                    <li><a class="navlink" href="#contact" >CONTACT</a></li>
-                </ul>
-            </nav> 
-        </header>
+        <nav id="navbar">
+            <ul id="navlist">
+                <li><a class="navlink" href="#home">HOME</a></li>
+                <li><a class="navlink" href="#about">ABOUT</a></li>
+                <li><a class="navlink" href="#projects" >PROJECTS</a></li>
+                <li><a class="navlink" href="#contact" >CONTACT</a></li>
+            </ul>
+        </nav>
 
         <main>
             <section id="home">
@@ -26,167 +24,183 @@
 
             <section id="about">
                 <div id="author_bio">
-                        <figure>
+                    <div class="left">
+                        <div id="pic">
                             <img id="author" src="./page_img/profile.jpg"/>
-                            <figcaption id="quote">Develop a passion for learning. <br>If you do, you will never cease 
-                                to grow.<br>Antony J. D'Angelo</figcaption>
-                        </figure>
-                        <p id="description">
+                            <p id="quote">
+                                Develop a passion for learning. If you do, you will never cease 
+                                to grow.<br>Antony J. D'Angelo
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right">    
+                        <div class="card">
                             My name is Neil Taison Rigaud, and I am passionate about Computer Science. I am excited 
                             about the world of Data Science and its potential to transform the world. As an aspiring 
                             engineer, I am fascinated by the ability to solve complex problems using cutting-edge 
                             technologies. I believe that Computer Science skills are essential for everyone to learn 
                             in the near future, as they have become a crucial component of every industry.
-                            <br><br>
+                        </div>
+                        <div class="card">
                             My focus is on AI and Data Science, and I am determined to create innovative tools and 
                             techniques for financial data analysis. My goal is to develop machine learning algorithms 
                             and data visualization tools that will revolutionize the industry and empower individuals 
                             and businesses to make better decisions.
-                            <br><br>
+                        </div>
+                        <div class="card">
                             With hard work, dedication, and a passion for innovation, I am confident that I can make a 
                             positive change in the world. Let's use the power of technology to make a difference together!
-                        </p>
+                        </div>
+                    </div>
                 </div>
                 
-                <ul id="education">
+                <div id="education">
                     <h1>Online learning</h1>
-                    <li><a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a>
-                        <p>
-                            Thanks to FreeCodeCamp, I am becoming a skilled web developer. Their courses have helped 
-                            me learn HTML, CSS, and other technologies. I completed the Responsive Web Design course 
-                            and got a certificate. I also learned Python scientific and completed five projects. Now, 
-                            I am learning Javascript and excited to continue growing. FreeCodeCamp's platform is 
-                            user-friendly and community-driven. I am grateful for their support and look forward to 
-                            my future as a web developer.
-                        </p>
-                    </li>
-                    <li><a href="https://learn.microsoft.com/" target="_blank">Microsoft Learn</a>
-                        <p>
-                            Learning Microsoft Powershell has been a game-changer for me. I appreciate the power of 
-                            automation and how it streamlines tasks. I acquired invaluable knowledge and skills that 
-                            made me more productive. I also learned Node JS, a powerful JavaScript environment, which 
-                            opened up new possibilities for me. I feel more confident using the command line, and I 
-                            understand computer functioning better. Learning from industry experts has been great, and 
-                            I look forward to exploring automation and programming further.
-                        </p>
-                    </li>
-                    <li><a href="https://www.codewars.com/" target="_blank">Codewars</a>
-                        <p>
-                            Codewars is my favourite playground for honing my coding skills. It challenges me to solve 
-                            problems and implement solutions, whether I'm refining my fundamentals or developing advanced 
-                            skills. The platform's exercises are engaging, diverse, and promote growth and learning. I 
-                            believe that practice makes perfect, and Codewars has been an incredibly effective tool for 
-                            improving my problem-solving abilities and deepening my understanding of the language. I am 
-                            grateful for the opportunity to learn from and compete with fellow coders on this platform. It 
-                            has been a fantastic experience, and I look forward to continuing to grow and learn with Codewars.
-                        </p>
-                    </li>
-                    <li><a href="https://leetcode.com/" target="_blank">Leetcode</a>
-                        <p>
-                            LeetCode is a great platform for programmers to test their skills and prepare for job interviews. 
-                            Its range of problems challenges users to think creatively and improve their problem-solving abilities. 
-                            The platform's emphasis on daily practice and consistency is what sets it apart. Its interactive nature 
-                            and real-world application make it an ideal tool for improving coding skills or preparing for job 
-                            interviews. Top companies also use LeetCode to find talented programmers, making it an excellent 
-                            opportunity for career growth. I encourage anyone looking to improve their coding skills or prepare 
-                            for job interviews to give LeetCode a try. With its engaging and challenging exercises, it provides a 
-                            great opportunity to learn, grow, and succeed.
-                        </p>
-                    </li>
-                </ul>
-
+                    <ul>
+                        <li><a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a>
+                            <p>
+                                Thanks to FreeCodeCamp, I am becoming a skilled web developer. Their courses have helped 
+                                me learn HTML, CSS, and other technologies. I completed the Responsive Web Design course 
+                                and got a certificate. I also learned Python scientific and completed five projects. Now, 
+                                I am learning Javascript and excited to continue growing. FreeCodeCamp's platform is 
+                                user-friendly and community-driven. I am grateful for their support and look forward to 
+                                my future as a web developer.
+                            </p>
+                        </li>
+                        <li><a href="https://learn.microsoft.com/" target="_blank">Microsoft Learn</a>
+                            <p>
+                                Learning Microsoft Powershell has been a game-changer for me. I appreciate the power of 
+                                automation and how it streamlines tasks. I acquired invaluable knowledge and skills that 
+                                made me more productive. I also learned Node JS, a powerful JavaScript environment, which 
+                                opened up new possibilities for me. I feel more confident using the command line, and I 
+                                understand computer functioning better. Learning from industry experts has been great, and 
+                                I look forward to exploring automation and programming further.
+                            </p>
+                        </li>
+                        <li><a href="https://www.codewars.com/" target="_blank">Codewars</a>
+                            <p>
+                                Codewars is my favourite playground for honing my coding skills. It challenges me to solve 
+                                problems and implement solutions, whether I'm refining my fundamentals or developing advanced 
+                                skills. The platform's exercises are engaging, diverse, and promote growth and learning. I 
+                                believe that practice makes perfect, and Codewars has been an incredibly effective tool for 
+                                improving my problem-solving abilities and deepening my understanding of the language. I am 
+                                grateful for the opportunity to learn from and compete with fellow coders on this platform. It 
+                                has been a fantastic experience, and I look forward to continuing to grow and learn with Codewars.
+                            </p>
+                        </li>
+                        <li><a href="https://leetcode.com/" target="_blank">Leetcode</a>
+                            <p>
+                                LeetCode is a great platform for programmers to test their skills and prepare for job interviews. 
+                                Its range of problems challenges users to think creatively and improve their problem-solving abilities. 
+                                The platform's emphasis on daily practice and consistency is what sets it apart. Its interactive nature 
+                                and real-world application make it an ideal tool for improving coding skills or preparing for job 
+                                interviews. Top companies also use LeetCode to find talented programmers, making it an excellent 
+                                opportunity for career growth. I encourage anyone looking to improve their coding skills or prepare 
+                                for job interviews to give LeetCode a try. With its engaging and challenging exercises, it provides a 
+                                great opportunity to learn, grow, and succeed.
+                            </p>
+                        </li>
+    
+                    </ul>
+                </div>
+                
+                <h1>Skills</h1>
                 <div class="skills">
-                    <h1>Skills</h1>
-                    <h2 class="skill-header">Web development</h2>
-                    <div class="sk-container">
-                        <div class="sk-level html">HTML</div>
+                    <div class="skill-card">
+                        <h2 class="skill-header">Web development</h2>
+                        <div class="sk-container">
+                            <div class="sk-level html">HTML</div>
+                        </div>
+                        <div class="sk-container">
+                            <div class="sk-level css">CSS</div>
+                        </div>
+                        <div class="sk-container">
+                            <div class="sk-level javascript">JavaScript</div>
+                        </div>    
                     </div>
-                    <div class="sk-container">
-                        <div class="sk-level css">CSS</div>
+
+                    <div class="skill-card">
+                        <h2 class="skill-header">Programming</h2>
+                        <div class="sk-container">
+                            <div class="sk-level cpp">C++</div>
+                        </div>
+                        <div class="sk-container">
+                            <div class="sk-level python">Python</div>
+                        </div>
+                        <div class="sk-container">
+                            <div class="sk-level javascript">JavaScript</div>
+                        </div>    
                     </div>
-                    <div class="sk-container">
-                        <div class="sk-level javascript">JavaScript</div>
+
+                    <div class="skill-card">
+                        <h2 class="skill-header">Software development tools</h2>
+                        <div class="sk-container">
+                            <div class="sk-level git">Git</div>
+                        </div>
+                        <div class="sk-container">
+                            <div class="sk-level github">GitHub</div>
+                        </div>
+                        <div class="sk-container">
+                            <div class="sk-level vs_code">VS Code</div>
+                        </div>
                     </div>
-                    <h2 class="skill-header">Programming</h2>
-                    <div class="sk-container">
-                        <div class="sk-level cpp">C++</div>
+
+                    <div class="skill-card">
+                        <h2 class="skill-header">Language proficiency</h2>
+                        <div class="sk-container">
+                            <div class="sk-level english">English</div>
+                        </div>
+                        <div class="sk-container">
+                            <div class="sk-level french">French</div>
+                        </div>
+                        <div class="sk-container">
+                            <div class="sk-level chinese">Chinese</div>
+                        </div>
+                        <div class="sk-container">
+                            <div class="sk-level spanish">Spanish</div>
+                        </div>
                     </div>
-                    <div class="sk-container">
-                        <div class="sk-level python">Python</div>
-                    </div>
-                    <div class="sk-container">
-                        <div class="sk-level javascript">JavaScript</div>
-                    </div>
-                    <h2 class="skill-header">Software development tools</h2>
-                    <div class="sk-container">
-                        <div class="sk-level git">Git</div>
-                    </div>
-                    <div class="sk-container">
-                        <div class="sk-level github">GitHub</div>
-                    </div>
-                    <div class="sk-container">
-                        <div class="sk-level vs_code">VS Code</div>
-                    </div>
-                    <h2 class="skill-header">Language proficiency</h2>
-                    <div class="sk-container">
-                        <div class="sk-level english">English</div>
-                    </div>
-                    <div class="sk-container">
-                        <div class="sk-level french">French</div>
-                    </div>
-                    <div class="sk-container">
-                        <div class="sk-level chinese">Chinese</div>
-                    </div>
-                    <div class="sk-container">
-                        <div class="sk-level spanish">Spanish</div>
-                    </div>
+
                 </div>
 
-                <div class="certifications" id="achievements">
-                    <h1>Certifications</h1>
-                    <div class="grid-item">
-                        <img src="RWD_cert.png" alt="Certificate of completion of the Responsive Web Design course on freeCodeCamp"/>
-                        <img src="SciPy_cert.png" alt="Certificate of completion of the Scientific Python course on freeCodeCamp"/>
-                        <img src="toeic.png" alt="Test of English proficiency certificate">
-                    </div>
+                <h1>Certifications</h1>
+                <div class="certifications">
+                    <img src="RWD_cert.png" alt="Certificate of completion of the Responsive Web Design course on freeCodeCamp"/>
+                    <img src="SciPy_cert.png" alt="Certificate of completion of the Scientific Python course on freeCodeCamp"/>
+                    <img src="toeic.png" alt="Test of English proficiency certificate">
                 </div>
 
+                <h1>My projects</h1>
                 <div id="projects">
-                    <h1>My projects</h1>
-                    <div class="project">
-                        <a href="https://blackbird410.github.io/odin-recipes/index.html" target="_blank">Dishes recipe website<br>
-                            <img src="./page_img/projects_img/Recipes.png" alt="Picture of odin's recipe website">
-                        </a>
-                        <a href="https://blackbird410.github.io/Product-landing-page/" target="_blank">Product Landing webpage
-                            <img src="./page_img/projects_img/Product_landing_page.png" alt="Product Landing page">
-                        </a>
-                    </div>
-
-                    </div>
+                    <a href="https://blackbird410.github.io/odin-recipes/index.html" target="_blank">Dishes recipe website<br>
+                        <img src="./page_img/projects_img/Recipes.png" alt="Picture of odin's recipe website">
+                    </a>
+                    <a href="https://blackbird410.github.io/Product-landing-page/" target="_blank">Product Landing webpage<br>
+                        <img src="./page_img/projects_img/Product_landing_page.png" alt="Product Landing page">
+                    </a>
+                </div>
 
             </section>
         </main>
     </body>
 
-    <footer>
-        <section id="contact">
-            <ul id="icons-container">
-                <li><a href="https://www.facebook.com/neiltaison.rigaud" target="_blank">
-                    <i class="fa fa-facebook" style="font-size: 48px; width: 50px;"></i></a>
-                </li>
-                <li><a href="https://twitter.com/NeilTaison" target="_blank">
-                    <i class="fa fa-twitter" style="font-size:48px;"></i></a>
-                </li>
-                <li><a href="https://www.linkedin.com/in/neil-ta%C3%AFson-rigaud-4a38071a3/" target="_blank">
-                    <i class="fa fa-linkedin-square" style="font-size:48px;"></i></a>
-                </li>
-                <li><a href="https://www.instagram.com/neil_rigaud/" target="_blank">
-                    <i class="fa fa-instagram" style="font-size:48px;"></i></a>
-                </li>
-                <li><a href="https://github.com/blackbird410/" target="_blank">
-                    <i class="fa fa-github-square" style="font-size: 48px;"></i></a>
-                </li>
-            </ul>
-        </section>
-    </footer>
+    <section id="contact">
+        <ul id="icons-container">
+            <li><a href="https://www.facebook.com/neiltaison.rigaud" target="_blank">
+                <i class="fa fa-facebook" style="font-size: 48px; width: 50px;"></i></a>
+            </li>
+            <li><a href="https://twitter.com/NeilTaison" target="_blank">
+                <i class="fa fa-twitter" style="font-size:48px;"></i></a>
+            </li>
+            <li><a href="https://www.linkedin.com/in/neil-ta%C3%AFson-rigaud-4a38071a3/" target="_blank">
+                <i class="fa fa-linkedin-square" style="font-size:48px;"></i></a>
+            </li>
+            <li><a href="https://www.instagram.com/neil_rigaud/" target="_blank">
+                <i class="fa fa-instagram" style="font-size:48px;"></i></a>
+            </li>
+            <li><a href="https://github.com/blackbird410/" target="_blank">
+                <i class="fa fa-github-square" style="font-size: 48px;"></i></a>
+            </li>
+        </ul>
+    </section>
 </html>
