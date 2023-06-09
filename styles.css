@@ -76,10 +76,8 @@ body {
     align-items: center;
     padding: 10%;
     height: 100vh;
-    animation: changeBg 100s infinite ease-out;
-    animation-delay: 5s;
-    transition: opacity 1s;
-    transition-delay: 5s;
+    background-image: url("./page_img/portfolioBg.jpg");
+    background-size: cover;
 }
 
 .line-1 {
@@ -92,6 +90,7 @@ body {
     text-align: center;
     white-space: nowrap;
     overflow: hidden; 
+    background-color: transparent;
 }
 
 .anim-typewriter{
@@ -416,43 +415,4 @@ h2 {
 @keyframes slide {
     from{left: 0%;}
     to{left: 5%}
-}
-
-@keyframes changeBg {
-    0%,
-    15% {
-        background-image: url("./page_img/bc/i0.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    15%,
-    30% {
-        background-image: url("./page_img/bc/i1.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    30%,
-    45% {
-        background-image: url("./page_img/bc/i2.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    45%,
-    65% {
-        background-image: url("./page_img/bc/i3.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    65%,
-    80% {
-        background-image: url("./page_img/bc/i4.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    80%,
-    100% {
-        background-image: url("./page_img/bc/i5.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
 }
