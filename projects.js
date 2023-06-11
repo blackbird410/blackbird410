@@ -99,6 +99,8 @@ export const addFooter = (footer) => {
 
     githubLogo.style.marginLeft = "8px";
 
+    footer.style.margin = "0px";
+    footer.style.padding = "0px";
     footer.style.flex = "1 1 60px";
     footer.style.width = "100%";
     footer.style.display = "flex";

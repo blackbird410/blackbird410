@@ -49,3 +49,10 @@ a:hover {
 li img {
     max-width: 300px;   
 }
+
+@media only screen and (max-width: 600px) {
+    .main {
+        padding: 16px 16px;
+        justify-content: center;
+    }
+}
