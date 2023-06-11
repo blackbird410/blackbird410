@@ -38,8 +38,7 @@ a:hover {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    gap: 52px
-    ;
+    gap: 52px;
 }
 
 .main .project {
@@ -54,5 +53,9 @@ li img {
     .main {
         padding: 16px 16px;
         justify-content: center;
+    }
+
+    .project {
+        width: 320px;
     }
 }
