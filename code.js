@@ -21,7 +21,7 @@ footer.className = "footer";
 
 headerLeft.textContent = "Neil's Projects";
 link.textContent = "Home";
-link.href = "https://blackbird410.github.io/";
+link.href = "./index.html";
 
 headerRight.appendChild(link);
 header.appendChild(headerLeft);
