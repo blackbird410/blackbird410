@@ -277,26 +277,8 @@ h2 {
     max-width: 500px;
 }
 
-.certifications img:hover, #projects img:hover {
+.certifications img:hover {
     width: 450px;
-}
-
-#projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    gap: 16px;
-    padding: 16px;
-}
-
-#projects a {
-    flex: 1 0 auto;
-}
-
-#projects img {
-    border-radius: 16px;
 }
 
 #contact {
