@@ -4,6 +4,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', 'Sans-serif';
+    background-color: #E5E7EB;
 }
 
 .header {
@@ -15,6 +16,7 @@ body {
     background-color: #1F2937;
     color: aliceblue;
     font-size: 18px;
+    font-weight: 600;
     width: 100%;
 }
 
