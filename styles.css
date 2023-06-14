@@ -90,6 +90,10 @@ body {
     height: 70%;
 }
 
+.welcome p {
+    line-height: 28px;
+}
+
 .welcome img {
     max-width: 250px;
     height: auto;
