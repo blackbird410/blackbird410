@@ -12,7 +12,6 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    gap: 180px;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 16px;
@@ -60,10 +59,10 @@ body {
 
 
 .welcome {
-    height: 90vh;
     width: 100%;
-    margin: 0;
-    margin-top: 32px;
+    margin-top: 42px;
+    padding-top: 32px;
+    padding-bottom: 16px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -72,7 +71,7 @@ body {
 }
 
 .welcomeLeft {
-    width: 50%;
+    width: 70%;
     max-width: 400px;
     text-align: center;
 } 
@@ -83,6 +82,8 @@ body {
 }
 
 .welcomeRight {
+    display: flex;
+    justify-content: center;
     width: 40%;
     max-width: 300px;
     height: 70%;
@@ -132,6 +133,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 16px;
 }
 
 ul li {
@@ -158,9 +160,8 @@ a h2:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    align-content: flex-start;
     align-items: flex-start;
-    gap: 16px;
     list-style-type: none;
 }
 
@@ -170,7 +171,28 @@ a h2:hover {
 }
 
 @media only screen and (max-width: 600px) {
+    .header {
+        justify-content: center;
+    }
+
+    .headerLeft {
+        gap: 0;
+    }
+
+    .link {
+        font-size: 14px;
+    }
+
     .welcome {
+        padding-top: 72px;
+        flex-direction: column-reverse;
+    }
+
+    .about {
         flex-direction: column;
+    }
+
+    .skills ul {
+        gap: 0;
     }
 }
