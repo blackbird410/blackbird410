@@ -1,4 +1,6 @@
-import { myPlatforms, mySkills, addPlatforms, addSkills, addFooter } from "./data.js";
+import { myPlatforms, mySkills, myCertifs, 
+    addPlatforms, addSkills, addCertifs, addFooter 
+} from "./data.js";
 
 const body = document.body;
 const header = document.createElement('div');
@@ -31,6 +33,9 @@ const learningPlatforms = document.createElement('div');
 const skills = document.createElement('div');
 const skillsHead = document.createElement('h2');
 
+const certificates =  document.createElement('div');
+const certHead = document.createElement('h2');
+
 header.className = "header";
 main.className = "main";
 footer.className = "footer";
@@ -61,6 +66,9 @@ learningPlatforms.className = "learningPlatforms";
 
 skills.className = 'skills';
 skillsHead.className = 'skillsHead';
+
+certificates.className = 'certificates';
+certHead.className = 'certHead';
 
 for (let i = 0; i < 4; i++) {
     const hButton = document.createElement('div');
@@ -123,12 +131,16 @@ skillsHead.textContent = 'My skills';
 skills.appendChild(skillsHead);
 addSkills(skills, mySkills);
 
+certHead.textContent = "Certificates"
+certificates.appendChild(certHead);
+addCertifs(certificates, myCertifs);
+
 main.appendChild(welcome);
 main.appendChild(quote);
 main.appendChild(about);
 main.appendChild(learningPlatforms);
 main.appendChild(skills);
-
+main.appendChild(certificates);
 
 addFooter(footer);
 

@@ -91,6 +91,11 @@ export const mySkills = [
     }
 ];
 
+export const myCertifs = [
+    "./page_img/certificates/RWD_cert.png",
+    "./page_img/certificates/SciPy_cert.png",
+    "./page_img/certificates/toeic.png"
+];
 
 export function addPlatforms(container, myPlatforms) {
     const platforms = document.createElement('ul');
@@ -174,3 +179,13 @@ export const addFooter = (footer) => {
     footer.style.fontSize = "16px";
     footer.style.fontWeight = "800";
 };
+
+export function addCertifs(container, certs) {
+    const innerCont = document.createElement('div');
+    for (let i = 0; i < certs.length; i++) {
+        const cert = document.createElement('img');
+        cert.src = certs[i];
+        innerCont.appendChild(cert);
+    }
+    container.appendChild(innerCont);
+}
