@@ -1,3 +1,22 @@
+export const myLinks = [
+    {
+        Name: "HOME",
+        Address: "./index.html" 
+    },
+    {
+        Name: "ABOUT",
+        Address: "#quote"
+    },
+    {
+        Name: "PROJECTS",
+        Address: "./project.html"
+    },
+    {
+        Name: "CONTACT",
+        Address: "#contact"
+    }
+];
+
 export const myPlatforms = [
     {
         name: 'The Odin Poject (TOR)',
@@ -96,6 +115,64 @@ export const myCertifs = [
     "./page_img/certificates/SciPy_cert.png",
     "./page_img/certificates/toeic.png"
 ];
+
+export function addHeader(container, myLinks) {
+    const header = document.createElement('div');
+    const headerLeft = document.createElement('div');
+    const headerRight = document.createElement('div');
+    const input = document.createElement('input');
+    const label = document.createElement('label');
+    const nav = document.createElement('nav');
+    const list = document.createElement('ul');
+
+    const gitLink = document.createElement('a');
+    const gitLogo = document.createElement('i');
+
+    header.className = "header";
+    headerLeft.className = "headerLeft";
+    headerRight.className = "headerRight";
+
+    gitLink.className = "gitLink";
+    gitLink.classList.add('link');
+    gitLogo.className = 'fa';
+    gitLogo.classList.add('fa-github');
+
+    input.type = "checkbox";
+    input.id = "toggle";
+    label.htmlFor = "toggle";
+    label.textContent = "☰";
+
+    for (let i = 0; i < 4; i++) {
+        const elt = document.createElement('li');
+        const link = document.createElement('a');
+    
+        link.className = "link";
+        // elt.className = "hButton";
+    
+        link.href = myLinks[i].Address;
+        link.textContent = myLinks[i].Name;
+        elt.appendChild(link);
+        list.appendChild(elt);
+    }
+
+    nav.appendChild(list);
+
+    gitLink.textContent = "Blackbird410";
+    gitLink.href = "https://github.com/blackbird410/";
+    gitLink.target = "blank";
+    gitLink.appendChild(gitLogo);
+
+    headerRight.appendChild(gitLink);
+
+    headerLeft.appendChild(input);
+    headerLeft.appendChild(label);
+    headerLeft.appendChild(nav);
+
+    header.appendChild(headerLeft);
+    header.appendChild(headerRight);
+
+    container.appendChild(header);
+}
 
 export function addPlatforms(container, myPlatforms) {
     const platforms = document.createElement('ul');

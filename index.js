@@ -1,17 +1,10 @@
-import { myPlatforms, mySkills, myCertifs, 
-    addPlatforms, addSkills, addCertifs, addFooter 
+import { myLinks, myPlatforms, mySkills, myCertifs, 
+    addHeader, addPlatforms, addSkills, addCertifs, addFooter 
 } from "./data.js";
 
 const body = document.body;
-const header = document.createElement('div');
 const main = document.createElement('div');
 const footer = document.createElement('div');
-
-const headerLeft = document.createElement('div');
-const headerRight = document.createElement('div');
-
-const gitLink = document.createElement('a');
-const gitLogo = document.createElement('i');
 
 const welcome = document.createElement('div');
 const welcomeLeft = document.createElement('div');
@@ -36,16 +29,8 @@ const skillsHead = document.createElement('h2');
 const certificates =  document.createElement('div');
 const certHead = document.createElement('h2');
 
-header.className = "header";
 main.className = "main";
 footer.className = "footer";
-
-headerLeft.className = "headerLeft";
-headerRight.className = "headerRight";
-gitLink.className = "gitLink";
-gitLink.classList.add('link');
-gitLogo.className = 'fa';
-gitLogo.classList.add('fa-github');
 
 welcome.className = 'welcome';
 welcomeLeft.className = 'welcomeLeft';
@@ -69,38 +54,6 @@ skillsHead.className = 'skillsHead';
 
 certificates.className = 'certificates';
 certHead.className = 'certHead';
-
-for (let i = 0; i < 4; i++) {
-    const hButton = document.createElement('div');
-    const link = document.createElement('a');
-    const linkTexts = ["HOME", "ABOUT", "PROJECTS", "CONTACT"];
-    const linkAddress = [
-        "index.html",
-        "#quote",
-        "./projects.html",
-        "#contact"
-    ];
-
-    hButton.className = "hButton";
-    link.className = "link";
-
-    link.href = linkAddress[i];
-    link.textContent = linkTexts[i];
-    hButton.appendChild(link);
-    headerLeft.appendChild(hButton);
-}
-
-
-
-gitLink.textContent = "Blackbird410";
-gitLink.href = "https://github.com/blackbird410/";
-gitLink.target = "blank";
-gitLink.appendChild(gitLogo);
-
-headerRight.appendChild(gitLink);
-
-header.appendChild(headerLeft);
-header.appendChild(headerRight);
 
 welcomeHead.textContent = "Welcome! I am Neil";
 welcomeDesc.textContent = "My name is Neil Taison Rigaud, and I am passionate about Computer Science. My interest lies in Data Science and its potential to transform the world. As an aspiring engineer, I am fascinated by the ability to solve complex problems using cutting-edge technologies. I believe that Computer Science skills are essential for everyone to learn in the near future, as they have become a crucial component of every industry.";
@@ -144,6 +97,7 @@ main.appendChild(certificates);
 
 addFooter(footer);
 
-body.appendChild(header);
+addHeader(body, myLinks);
+
 body.appendChild(main);
 body.appendChild(footer);
