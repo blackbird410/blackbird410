@@ -9,7 +9,7 @@ export const myLinks = [
     },
     {
         Name: "PROJECTS",
-        Address: "./project.html"
+        Address: "./projects.html"
     },
     {
         Name: "CONTACT",
