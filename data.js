@@ -32,6 +32,12 @@ export const myPlatforms = [
         name: 'Leetcode',
         description: "LeetCode is a great platform for programmers to test their skills and prepare for job interviews. Its range of problems challenges users to think creatively and improve their problem-solving abilities. The platform's emphasis on daily practice and consistency is what sets it apart. Its interactive nature and real-world application make it an ideal tool for improving coding skills or preparing for job interviews. Top companies also use LeetCode to find talented programmers, making it an excellent opportunity for career growth. I encourage anyone looking to improve their coding skills or prepare for job interviews to give LeetCode a try. With its engaging and challenging exercises, it provides a great opportunity to learn, grow, and succeed.",
         link: 'https://www.leetcode.com/'
+    },
+    {
+        name: 'Edx (Harvard CS50)',
+        description: "Thanks to Edx and its extensive range of free resources, I had the incredible opportunity to delve into the fascinating world of Computer Science through the renowned Harvard CS50 course. I firmly believe that this course is impeccably designed, offering a well-paced learning experience accompanied by meticulously detailed content, making it an ideal choice for beginners.",
+        link: 'https://learning.edx.org/course/course-v1:HarvardX+CS50+X/home'
+
     }
 ];
 
