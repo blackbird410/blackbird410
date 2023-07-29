@@ -23,6 +23,12 @@ export const webAppProjects = [
 
 export const webSites = [
     {
+        name: 'Odin: Sign-Up Form',
+        link: 'https://blackbird410.github.io/Odin-Sign-up-Form/',
+        description: 'An sign-up web form to the Arcane platform, where all your dreams can become true :)',
+        pictureLink: projImgDir + 'arcane.png'
+    },
+    {
         name: 'Odin: Product Landing Page',
         link: 'https://blackbird410.github.io/Product-landing-page-Odin/',
         description: "An ice cream product landing webpage that present the product, and have order options.",
