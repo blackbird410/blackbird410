@@ -258,7 +258,7 @@ a h2:hover {
 .platforms {
     list-style-type: none;
     width: 300px;
-    height: 250px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -337,6 +337,6 @@ a h2:hover {
     }
 
     .main_contact {
-        margin-top: 32px;
+        margin-top: 24px;
     }
 }

@@ -4,8 +4,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', 'Sans-serif';
-    background-color: #000;
-    height: fit-content;
+    background-color: #E5E7EB;
 }
 
 .main {
