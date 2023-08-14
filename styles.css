@@ -251,7 +251,6 @@ a h2:hover {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    align-content: last baseline;
     justify-content: center;
     background-color: #000;
 }
