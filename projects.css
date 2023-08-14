@@ -7,32 +7,6 @@ body {
     background-color: #E5E7EB;
 }
 
-.header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 24px 12px;
-    background-color: #1F2937;
-    color: aliceblue;
-    font-size: 18px;
-    font-weight: 600;
-    width: 100%;
-}
-
-.headerLeft, .headerRight {
-    width: 120px;
-}
-
-.header a {
-    text-decoration: none;
-    color: aliceblue;
-}
-
-a:hover {
-    opacity: 0.6;
-}
-
 .main {
     padding: 16px 84px;
     display: flex;
@@ -41,10 +15,15 @@ a:hover {
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 52px;
+    margin-top: 72px;
 }
 
 .main .project {
     width: 350px;
+}
+
+a.githubLink:hover {
+    opacity: 0.6;
 }
 
 li img {
@@ -53,8 +32,13 @@ li img {
 
 @media only screen and (max-width: 600px) {
     .main {
-        padding: 16px 16px;
+        padding: 16px;
         justify-content: center;
+        margin-top: 100px;
+    }
+
+    h1 {
+        text-align: center;
     }
 
     .project {

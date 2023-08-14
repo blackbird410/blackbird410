@@ -42,8 +42,8 @@ label {
 }
 
 label:hover {
-    border-color: #ff7b29;
-    color: #ff7b29;
+    border-color: #66B933;
+    color: #66B933;
 }
 
 input {
@@ -81,8 +81,8 @@ input:checked ~ nav {
 }
 
 .link:hover {
-    background-color: #ffffff;
-    color: #1b1b32;
+    color: #66B933;
+    box-shadow: 10px -10px 15px #66B933;
 }
 
 .gitLink {
@@ -105,7 +105,7 @@ input:checked ~ nav {
 
 .welcome {
     width: 100%;
-    margin-top: 42px;
+    margin-top: 72px;
     padding-top: 32px;
     padding-bottom: 16px;
     display: flex;
@@ -117,10 +117,14 @@ input:checked ~ nav {
 }
 
 .welcomeLeft {
-    width: 70%;
-    max-width: 400px;
+    width: 75%;
+    max-width: 450px;
     text-align: center;
 } 
+
+.welcomeHead {
+    font-family: cursive, sans-serif;
+}
 
 .welcomeDesc {
     text-align: justify;
@@ -170,6 +174,7 @@ input:checked ~ nav {
     gap: 12px;
     padding: 16px;
     background-color: #dfdfe2;
+    font: 16px;
 }
 
 .about p {
@@ -195,7 +200,7 @@ li p {
 }
 
 a h2:hover {
-    color: orange;
+    color: #66B933;
 }
 
 .skills, .certificates {
@@ -239,6 +244,72 @@ a h2:hover {
     height: auto;
 }
 
+/* ----CONTACT PAGE---- */
+
+.main_contact {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+.platforms {
+    list-style-type: none;
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.contact>.link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    width: 250px;
+    padding: 8px;
+    border-radius: 16px;
+    animation: shadow 10s ease-in-out infinite;
+}
+
+.fa {
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 0;
+    font-size: 48px;
+}
+
+.fa::after
+{
+    content: '  ';
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 10px 10px 15px #1b1b32;
+        opacity: 1;
+    }
+
+    50% {
+        box-shadow: -10px -10px 15px #1b1b32;
+        opacity: 0.5;
+    }
+
+    100% {
+        box-shadow: 10px 10px 15px #1b1b32;
+        opacity: 1;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .header {
         justify-content: center;
@@ -263,5 +334,9 @@ a h2:hover {
 
     .skills ul {
         gap: 0;
+    }
+
+    .main_contact {
+        margin-top: 32px;
     }
 }

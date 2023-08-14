@@ -13,7 +13,7 @@ export const myLinks = [
     },
     {
         Name: "CONTACT",
-        Address: "#contact"
+        Address: "./contact.html"
     }
 ];
 
