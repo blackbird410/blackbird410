@@ -39,6 +39,7 @@ label {
     font-size: 18px;
     padding: 5px 9px;
     transition: all .15s ease;
+    animation: shadow 10s ease-in-out infinite;
 }
 
 label:hover {
@@ -295,17 +296,17 @@ a h2:hover {
 
 @keyframes shadow {
     0% {
-        box-shadow: 10px 10px 15px #1b1b32;
+        box-shadow: 10px 10px 15px #7b7b9b;
         opacity: 1;
     }
 
     50% {
-        box-shadow: -10px -10px 15px #1b1b32;
+        box-shadow: -10px -10px 15px #7b7b9b;
         opacity: 0.5;
     }
 
     100% {
-        box-shadow: 10px 10px 15px #1b1b32;
+        box-shadow: 10px 10px 15px #7b7b9b;
         opacity: 1;
     }
 }
