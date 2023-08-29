@@ -5,7 +5,7 @@ export const myLinks = [
     },
     {
         Name: "ABOUT",
-        Address: "#quote"
+        Address: "./extra.html"
     },
     {
         Name: "PROJECTS",
