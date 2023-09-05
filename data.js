@@ -117,6 +117,7 @@ export const mySkills = [
 ];
 
 export const myCertifs = [
+    "./page_img/certificates/CS50 Certificate.png",
     "./page_img/certificates/RWD_cert.png",
     "./page_img/certificates/SciPy_cert.png",
     "./page_img/certificates/toeic.png"
