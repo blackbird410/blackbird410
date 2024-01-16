@@ -4,7 +4,7 @@ export const webAppProjects = [
     {
         name: 'Calculator',
         link: 'https://blackbird410.github.io/Calculator/',
-        description: "A calculator capable of basic operations. It is a project from The Odin Project curriculum, part fundamentals",
+        description: "A basic calculator modeled after the IPhone calculator app",
         pictureLink: projImgDir + "Odin-Calculator.png"
     },
     {
