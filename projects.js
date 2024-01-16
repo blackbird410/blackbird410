@@ -2,8 +2,8 @@ export let projImgDir  = "./page_img/projects_img/";
 
 export const webAppProjects = [
     {
-        name: 'Odin: Calculator',
-        link: 'https://blackbird410.github.io/Odin-Calculator/',
+        name: 'Calculator',
+        link: 'https://blackbird410.github.io/Calculator/',
         description: "A calculator capable of basic operations. It is a project from The Odin Project curriculum, part fundamentals",
         pictureLink: projImgDir + "Odin-Calculator.png"
     },
