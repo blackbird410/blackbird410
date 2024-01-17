@@ -9,9 +9,9 @@ export const webAppProjects = [
     },
     {
         name: 'Etch-A-Sketch',
-        link: 'https://blackbird410.github.io/Etch-a-Sketch/',
-        description: "A web application which is basically a sketchpad, when you hover the mouse on the pad, it apply colors based on the chosen mode.",
-        pictureLink: projImgDir + "Sketch.png"
+        link: 'https://blackbird410.github.io/Sketchpad/',
+        description: "A sketchpad, when you hover the mouse on the pad, it apply colors based on the chosen mode.",
+        pictureLink: projImgDir + "Sketchpad.png"
     },
     {
         name: 'Rock-Paper-Scissors',
