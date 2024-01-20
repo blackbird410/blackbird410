@@ -56,7 +56,7 @@ certificates.className = 'certificates';
 certHead.className = 'certHead';
 
 welcomeHead.textContent = "Welcome! I am Neil";
-welcomeDesc.textContent = "My name is Neil Taison Rigaud, and I am passionate about Computer Science. My interest lies in Data Science and its potential to transform the world. As an aspiring engineer, I am fascinated by the ability to solve complex problems using cutting-edge technologies. I believe that Computer Science skills are essential for everyone to learn in the near future, as they have become a crucial component of every industry.";
+welcomeDesc.textContent = "My name is Neil Taison Rigaud, I am CS Major at NDHU. I am actually learning web development, not because I'm a great designer but I'm working on my problem solving and researching skills. I hope this will lead me to a reasonable answer to 'Why I chose to be a CS major?' You're welcome to look at my projects and give me some feedback. Thank you";
 welcomeImg.src = './page_img/profile.jpg';
 
 welcomeLeft.appendChild(welcomeHead);
@@ -72,8 +72,8 @@ quoteAuthor.textContent = "Antony J. D'Angelo";
 
 quote.appendChild(quoteAuthor);
 
-aboutLeft.textContent = "My focus is on AI and Data Science, and I am determined to create innovative tools and techniques for financial data analysis. My goal is to develop machine learning algorithms and data visualization tools that will revolutionize the industry and empower individuals and businesses to make better decisions."
-aboutRight.textContent = "With hard work, dedication, and a passion for innovation, I am confident that I can make a positive change in the world. Let's use the power of technology to make a difference together!";
+aboutLeft.textContent = "My focus is on developing my ability to think rationally and effectively about solving problems, that's why I am more focused on competitive programming."
+aboutRight.textContent = "I believe that the projects I am working on will help me build the skills required to solve problems more effectively and also build a better work ethic.";
 
 about.appendChild(aboutLeft);
 about.appendChild(aboutRight);
