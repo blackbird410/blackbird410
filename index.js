@@ -56,7 +56,7 @@ certificates.className = 'certificates';
 certHead.className = 'certHead';
 
 welcomeHead.textContent = "Welcome! I am Neil";
-welcomeDesc.textContent = "My name is Neil Taison Rigaud, I am CS Major at NDHU. I am actually learning web development, not because I'm a great designer but I'm working on my problem solving and researching skills. I hope this will lead me to a reasonable answer to 'Why I chose to be a CS major?' You're welcome to look at my projects and give me some feedback. Thank you";
+welcomeDesc.textContent = "My name is Neil Taison Rigaud, I am CS Major at NDHU. I am actually learning web development and working on enhancing my problem solving and researching skills. I hope this will lead me to a reasonable answer to 'Why I chose to be a CS major?' You're welcome to take a look at my projects and give me some feedback. Thank you";
 welcomeImg.src = './page_img/profile.jpg';
 
 welcomeLeft.appendChild(welcomeHead);
