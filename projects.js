@@ -23,6 +23,12 @@ export const webAppProjects = [
 
 export const webSites = [
     {
+        name: 'Admin Dashboard',
+        link: 'https://blackbird410.github.io/Admin-dashboard/',
+        description: 'A template for an administrator dashboard website',
+        pictureLink: projImgDir + 'admin-dashboard.png'
+    },
+    {
         name: 'Sign-up-form',
         link: 'https://blackbird410.github.io/Sign-up-form/',
         description: 'A template for sign up form.',
