@@ -2,6 +2,12 @@ export let projImgDir  = "./page_img/projects_img/";
 
 export const webAppProjects = [
     {
+        name: 'Book Library',
+        link: 'https://blackbird410.github.io/Library/',
+        description: "A book library app",
+        pictureLink: projImgDir + "library.png"
+    },
+    {
         name: 'Calculator',
         link: 'https://blackbird410.github.io/Calculator/',
         description: "A basic calculator modeled after the IPhone calculator app",
