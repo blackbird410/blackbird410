@@ -35,6 +35,12 @@ export const webAppProjects = [
 
 export const webSites = [
     {
+        name: 'Restaurant Page',
+        link: 'https://blackbird410.github.io/restaurant-page/',
+        description: 'A template for a restaurant website',
+        pictureLink: projImgDir + 'restaurant-page.png'
+    },
+    {
         name: 'Admin Dashboard',
         link: 'https://blackbird410.github.io/Admin-dashboard/',
         description: 'A template for an administrator dashboard website',
