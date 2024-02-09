@@ -2,6 +2,12 @@ export let projImgDir  = "./page_img/projects_img/";
 
 export const webAppProjects = [
     {
+        name: 'Todo List',
+        link: 'https://blackbird410.github.io/todo-list/',
+        description: "A personal task management web application",
+        pictureLink: projImgDir + "todo-list.png"
+    },
+    {
         name: 'Tic-Tac-Toe',
         link: 'https://blackbird410.github.io/Tic-Tac-Toe/',
         description: "A tic tac toe browser game",
