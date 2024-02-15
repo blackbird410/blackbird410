@@ -2,6 +2,12 @@ export let projImgDir  = "./page_img/projects_img/";
 
 export const webAppProjects = [
     {
+        name: 'Image slider',
+        link: 'https://blackbird410.github.io/image-slider/',
+        description: "An image slider",
+        pictureLink: projImgDir + "image-slider.png"
+    },
+    {
         name: 'Todo List',
         link: 'https://blackbird410.github.io/todo-list/',
         description: "A personal task management web application",
