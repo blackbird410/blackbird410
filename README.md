@@ -1,2 +1,4 @@
-# Neil Taison Rigaud
-Hello! This is the repo of my portfolio, you will find the project I am working on listed here and other infos about me. Stay tuned!!!
+# Hi there 👋
+## Status
+* 💻 Actually learning Web development on The Odin Project
+* 🙂 You are welcome to look at my projects and some feedbacks would be much appreciated.
