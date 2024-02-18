@@ -1,181 +1,180 @@
 body {
-    margin: 0;
-    padding: 12px;
-    width: 100vw;
-    height: fit-content;
-    background-color: #000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin: 0;
+  padding: 12px;
+  width: 100vw;
+  height: fit-content;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h2 {
-    color: #FFF;
-    margin-bottom: 16px;
+  color: #fff;
+  margin-bottom: 16px;
 }
 
-.main{
-    display: flex;
-    align-items: center;
-    width: 90%;
-    margin: 24px;
-    z-index: 0;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100vw;
+.main {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: 24px;
+  z-index: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100vw;
 }
 
-.main_extra>h2 {
-    align-self: center;
+.main_extra > h2 {
+  align-self: center;
 }
 
 .image {
-    width: clamp(300px, 45%, 40vw);
-    height: auto;
-    align-self: flex-start;
+  width: clamp(300px, 45%, 40vw);
+  height: auto;
+  align-self: flex-start;
 }
 
-.image>img {
-    border-radius: 16px;
-    max-height: 550px;
+.image > img {
+  border-radius: 16px;
+  max-height: 550px;
 }
 
 .title {
-    font-weight: 600;
-    font-size: larger;
-    font-style: italic;
+  font-weight: 600;
+  font-size: larger;
+  font-style: italic;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    min-width: 100vw;
-    padding: 16px;
+  display: flex;
+  justify-content: center;
+  min-width: 100vw;
+  padding: 16px;
 }
 
 .travel {
-    background-color: #3E454B;
-    color: #FFF;
-    box-shadow: 0px 5px 25px lightsteelblue;
-    z-index: 3;
+  background-color: #3e454b;
+  color: #fff;
+  box-shadow: 0px 5px 25px lightsteelblue;
+  z-index: 3;
 }
 
 .cooking {
-    background-color: #FAA773;
-    box-shadow: 0px 5px 25px #729aa6;
-    z-index: 2;
+  background-color: #faa773;
+  box-shadow: 0px 5px 25px #729aa6;
+  z-index: 2;
 }
 
 .fitness {
-    background-color: #DCDCDC;
-    box-shadow: 0px 5px 25px #729aa6;
-    z-index: 2;
+  background-color: #dcdcdc;
+  box-shadow: 0px 5px 25px #729aa6;
+  z-index: 2;
 }
 
 .programming {
-    background-color: #000;
-    color: #66B933;
-    box-shadow: 0px 5px 25px #66B933;
-    z-index: 2;
+  background-color: #000;
+  color: #66b933;
+  box-shadow: 0px 5px 25px #66b933;
+  z-index: 2;
 }
 
 .extra {
-    width: clamp(550px, 80%, 50vw);
-    padding: 16px;
+  width: clamp(550px, 80%, 50vw);
+  padding: 16px;
 }
 
 .extra_img {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-    color: #FFF;
-    padding: 8px;
-    margin: 12px;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  color: #fff;
+  padding: 8px;
+  margin: 12px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .image_credits {
-    font-size: small;
-    font-style: italic;
+  font-size: small;
+  font-style: italic;
 }
 
-p.image_credits>a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #10EAF6;
+p.image_credits > a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #10eaf6;
 }
 
 .extra_img.travel_img {
-    background-image: url("./page_img/extra_img/travel.jpg");
+  background-image: url("./page_img/extra_img/travel.jpg");
 }
 
 .extra_img.cooking_img {
-    background-image: url("./page_img/extra_img/cooking.jpg");
+  background-image: url("./page_img/extra_img/cooking.jpg");
 }
 
 .extra_img.fitness_img {
-    background-image: url("./page_img/extra_img/fitness.jpg");
+  background-image: url("./page_img/extra_img/fitness.jpg");
 }
 
 .extra_img.programming_img {
-    background-image: url("./page_img/extra_img/programming.jpg");
-    color: #3E454B;
+  background-image: url("./page_img/extra_img/programming.jpg");
+  color: #3e454b;
 }
 
-.programming_img>.image_credits>a {
-    color: #66B933;
+.programming_img > .image_credits > a {
+  color: #66b933;
 }
 
-.fitness_img>.image_credits>a {
-    color: #d30a0a;
+.fitness_img > .image_credits > a {
+  color: #d30a0a;
 }
 
-.cooking_img>.image_credits>a {
-    color: burlywood;
+.cooking_img > .image_credits > a {
+  color: burlywood;
 }
 
-.fitness_img>.image_credits,
-.cooking_img>.image_credits {
-    align-self: flex-start;
+.fitness_img > .image_credits,
+.cooking_img > .image_credits {
+  align-self: flex-start;
 }
 
-.extra_img>img {
-    width: 100%;
-    height: auto;
+.extra_img > img {
+  width: 100%;
+  height: auto;
 }
 
 .description {
-    font-family: 'Roboto', sans-serif;
-    text-align: justify;
-    font-size: larger;
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  font-size: larger;
 }
 
-
 .link {
-    text-decoration: none;
-    display: block;
-    color: #ffffff;
-    font-weight: bold;
-    width: 250px;
-    padding: 8px;
-    border-radius: 16px;
-    animation: shadow 10s ease-in-out infinite;
+  text-decoration: none;
+  display: block;
+  color: #ffffff;
+  font-weight: bold;
+  width: 250px;
+  padding: 8px;
+  border-radius: 16px;
+  animation: shadow 10s ease-in-out infinite;
 }
 
 .link:hover {
-    color: #66B933;
-    box-shadow: 10px -10px 15px #66B933;
+  color: #66b933;
+  box-shadow: 10px -10px 15px #66b933;
 }
 
 @media only screen and (max-width: 600px) {
-    .main_index {
-        flex-direction: column;
-    }
+  .main_index {
+    flex-direction: column;
+  }
 
-    .image {
-        align-self: center;
-    }
+  .image {
+    align-self: center;
+  }
 }
