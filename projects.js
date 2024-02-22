@@ -2,7 +2,13 @@ export let projImgDir = "./page_img/projects_img/";
 
 export const webAppProjects = [
   {
-    name: "Image slider",
+    name: "Weather App",
+    link: "https://blackbird410.github.io/weather-app/",
+    description: "A weather app",
+    pictureLink: projImgDir + "weather-app.png",
+  },
+  {
+    name: "Image Slider",
     link: "https://blackbird410.github.io/image-slider/",
     description: "An image slider",
     pictureLink: projImgDir + "image-slider.png",
