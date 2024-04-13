@@ -2,7 +2,6 @@ import profile from "./profile.jpg";
 import { addProjects } from "./projects";
 
 export const addHeader = () => {
-
   const header = document.createElement("header");
   document.body.appendChild(header);
 
@@ -26,17 +25,15 @@ export const addHeader = () => {
   aboutMe.appendChild(aboutMeHeader);
   aboutMe.appendChild(aboutMeText);
   header.appendChild(aboutMe);
-}
+};
 
 export const addMain = () => {
   const main = document.createElement("main");
   document.body.appendChild(main);
-  addProjects();  
-}
+  addProjects();
+};
 
 export const addFooter = () => {
   const footer = document.createElement("footer");
   document.body.appendChild(footer);
-}
-
-
+};
