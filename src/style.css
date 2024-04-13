@@ -1,9 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+:root {
+  --main-color: orange;
+}
+
 body {
   margin: 0;
   padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Poppins", sans-serif;
-  color: orange;
+  font-family: "Playfair Display", Roboto, "Poppins", sans-serif;
+  background-color: var(--main-color);
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  text-align: justify;
+}
+
+.about-me {
+  max-width: 450px;
+  background-color: white;
+  padding: 1rem;
+  justify-self: left;
+}
+
+.main {
+  background-color: white;
+}
+
+.header-img {
+  height: 320px;
+  min-width: 300px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.name {
+  background-color: rgba(120, 120, 120, 0.8);
+  width: 100%;
+  transition:
+    background-color 1s ease-out 0.25s,
+    color 1s ease-out 0.25s;
+}
+
+.name:hover {
+  background-color: darkgray;
+  color: black;
+}
+
+header > .header-img,
+header > .about-me {
+  box-shadow: 4px 2px 2px gray;
 }
