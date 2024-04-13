@@ -9,10 +9,12 @@ body {
   margin: 0;
   padding: 1rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: "Playfair Display", Roboto, "Poppins", sans-serif;
   background-color: var(--main-color);
+  gap: 1.5rem;
 }
 
 header {
@@ -61,4 +63,47 @@ header {
 header > .header-img,
 header > .about-me {
   box-shadow: 4px 2px 2px gray;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.project-image {
+  grid-area: image;
+}
+
+.project-wrapper > h3 {
+  grid-area: title;
+}
+
+.logo.github {
+  grid-area: logo-github;
+}
+
+.logo.open {
+  grid-area: logo-open;
+}
+
+.project-wrapper > p {
+  grid-area: description;
+}
+
+.project-wrapper {
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr); 
+  grid-template-areas: 
+    "image image image image image"
+    "image image image image image"
+    "title title title logo-github logo-open"
+    "description description description description description";
+}
+
+img {
+  max-height: 300px;
+  width: 100%;
 }
