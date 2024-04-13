@@ -20,7 +20,7 @@ export const addHeader = () => {
   aboutMeHeader.textContent = "About Me";
   const aboutMeText = document.createElement("p");
   aboutMeText.textContent =
-    "My name is Neil Taison Rigaud, I am CS Major at NDHU. I am actually learning web development and working on enhancing my problem solving and researching skills. I hope this will lead me to a reasonable answer to 'Why I chose to be a CS major?' You're welcome to take a look at my projects and give me some feedback. Thank you";
+    "Hi there! I'm Neil Taison Rigaud, studying Computer Science at NDHU. Currently, I'm diving into web development and sharpening my problem-solving skills. My goal? To understand why I chose this major and make meaningful contributions. Check out my projects and share your thoughts. Thanks for joining me on this journey!";
 
   aboutMe.appendChild(aboutMeHeader);
   aboutMe.appendChild(aboutMeText);
