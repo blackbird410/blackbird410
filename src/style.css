@@ -66,11 +66,12 @@ header > .about-me {
 }
 
 main {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 1rem;
   margin: auto 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .project-image {
@@ -94,9 +95,15 @@ main {
 }
 
 .project-wrapper {
+  flex-basis: 280px;
   background-color: white;
   display: flex;
   flex-direction: column;
+  transition: transform 250ms ease-out 200ms;
+}
+
+.project-wrapper:hover {
+  transform: scale(1.2);
 }
 
 .project-info-wrapper {
