@@ -32,10 +32,16 @@ header {
 }
 
 .about-me {
-  max-width: 450px;
+  max-width: 500px;
   background-color: white;
   padding: 1rem;
   justify-self: left;
+}
+
+.about-me > p {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 1.2rem;
 }
 
 .main {
@@ -43,7 +49,7 @@ header {
 }
 
 .header-img {
-  height: 320px;
+  height: 350px;
   min-width: 300px;
   color: white;
   text-align: center;
@@ -72,14 +78,23 @@ header {
 }
 
 main {
+  text-align: center;
   background-color: white;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+}
+
+header,
+main,
+footer {
   padding: 1rem;
   padding-left: 3rem;
   padding-right: 3rem;
-  gap: 2rem;
+}
+
+.projects-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
 }
 
 .project-image {
@@ -145,7 +160,36 @@ ion-icon {
     transform 25ms ease-out 25ms;
 }
 
+.about-me ion-icon {
+  color: black;
+}
+
 ion-icon:hover {
   color: #318ce7;
+  transform: scale(1.4);
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  color: white;
+}
+
+footer > img {
+  max-height: 350px;
+  width: auto;
+}
+
+.contact-info {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+footer .links-wrapper {
+  justify-content: center;
   transform: scale(1.4);
 }

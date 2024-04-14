@@ -153,10 +153,10 @@ export const projects = [
 ];
 
 export const addProjects = () => {
-  const main = document.querySelector("main");
+  const wrapper = document.querySelector(".projects-wrapper");
 
   projects.forEach((p) => {
     let project = new Project(p);
-    main.appendChild(project.wrapper);
+    wrapper.appendChild(project.wrapper);
   });
 };
