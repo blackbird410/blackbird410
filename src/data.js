@@ -88,7 +88,7 @@ export const addFooter = () => {
   title.textContent = "Contact Me";
   text.textContent =
     "Please get in touch if you think our work could be mutually beneficial!";
-  address.textContent = "123 Zhongshang Road, Hualien City, Taiwan";
+  address.textContent = "Hualien City, Taiwan";
   img.src = pic;
   ["call", "mail"].forEach((item) => {
     const wrapper = document.createElement("div");
