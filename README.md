@@ -1,5 +1,5 @@
 ### Hi there 👋
 
-- 🔭 I’m currently working on The Odin Project curriculum
-- 🌱 I’m currently learning React
-- 👯 I’m looking to collaborate on open source projects.
+- 🔭 Working on The Odin Project curriculum
+- 🌱 Learning React
+- Looking to collaborate on open source projects.
