@@ -12,6 +12,7 @@ import calculator from "./projects_img/Odin-Calculator.png";
 import adminDashboard from "./projects_img/admin-dashboard.png";
 import restaurant from "./projects_img/restaurant-page.png";
 import signUp2 from "./projects_img/second-sign-up-form.png";
+import cvApp from "./projects_img/cv-app.png";
 
 export class Project {
   constructor(p) {
@@ -37,7 +38,10 @@ export class Project {
     this.description.textContent = p.description;
 
     let repoLink = p.link.split("blackbird410.github.io");
-    repoLink = `${repoLink[0]}github.com/blackbird410${repoLink[1]}`;
+    // TODO: Fix the matching pattern correctly for when adding deployments using vercel
+    repoLink = p.link.match("vercel")
+      ? "https://github.com/blackbird410/cv-application"
+      : `${repoLink[0]}github.com/blackbird410${repoLink[1]}`;
     this.githubLink.className = "github-link";
     this.githubLink.href = repoLink;
     this.githubLink.target = "_blank";
@@ -63,6 +67,12 @@ export class Project {
 export let projImgDir = "./projects_img/";
 
 export const projects = [
+  {
+    name: "CV App",
+    link: "https://cv-app-neil.vercel.app/",
+    description: "A customizable cv application",
+    pictureLink: cvApp,
+  },
   {
     name: "Weather App",
     link: "https://blackbird410.github.io/weather-app/",
