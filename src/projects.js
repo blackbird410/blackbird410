@@ -13,6 +13,7 @@ import adminDashboard from "./projects_img/admin-dashboard.png";
 import restaurant from "./projects_img/restaurant-page.png";
 import signUp2 from "./projects_img/second-sign-up-form.png";
 import cvApp from "./projects_img/cv-app.png";
+import memoryCard from "./projects_img/memory-card.png";
 
 export class Project {
   constructor(p) {
@@ -38,10 +39,10 @@ export class Project {
     this.description.textContent = p.description;
 
     let repoLink = p.link.split("blackbird410.github.io");
-    // TODO: Fix the matching pattern correctly for when adding deployments using vercel
     repoLink = p.link.match("vercel")
-      ? "https://github.com/blackbird410/cv-application"
+      ? p.githubLink 
       : `${repoLink[0]}github.com/blackbird410${repoLink[1]}`;
+
     this.githubLink.className = "github-link";
     this.githubLink.href = repoLink;
     this.githubLink.target = "_blank";
@@ -68,8 +69,16 @@ export let projImgDir = "./projects_img/";
 
 export const projects = [
   {
+    name: "Memory Card",
+    link: "https://memory-card-neil.vercel.app/",
+    githubLink: "https://github.com/blackbird410/memory-card",
+    description: "A memory card game",
+    pictureLink: memoryCard,
+  },
+  {
     name: "CV App",
     link: "https://cv-app-neil.vercel.app/",
+    githubLink: "https://github.com/blackbird410/cv-application",
     description: "A customizable cv application",
     pictureLink: cvApp,
   },
