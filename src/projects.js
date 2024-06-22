@@ -40,7 +40,7 @@ export class Project {
 
     let repoLink = p.link.split("blackbird410.github.io");
     repoLink = p.link.match("vercel")
-      ? p.githubLink 
+      ? p.githubLink
       : `${repoLink[0]}github.com/blackbird410${repoLink[1]}`;
 
     this.githubLink.className = "github-link";
