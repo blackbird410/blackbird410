@@ -1,6 +1,5 @@
 # 💫 About Me:
-<br><br>- 🔭 Working on The Odin Project curriculum<br>- 🌱 Learning React<br>Looking to collaborate on open source projects.<br>
-
+- 🔭 Working on The Odin Project curriculum<br>- 🌱 Learning React<br>Looking to collaborate on open source projects.<br>
 
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/neilrigaud) 
