@@ -14,6 +14,7 @@ import restaurant from "./projects_img/restaurant-page.png";
 import signUp2 from "./projects_img/second-sign-up-form.png";
 import cvApp from "./projects_img/cv-app.png";
 import memoryCard from "./projects_img/memory-card.png";
+import shoppingCart from "./projects_img/shopping-cart.png";
 
 export class Project {
   constructor(p) {
@@ -68,6 +69,13 @@ export class Project {
 export let projImgDir = "./projects_img/";
 
 export const projects = [
+  {
+    name: "Shopping Cart",
+    link: "https://shopping-cart-neil.vercel.app/",
+    githubLink: "https://github.com/blackbird410/shopping-cart",
+    description: "A shopping cart web app created using React",
+    pictureLink: shoppingCart,
+  },
   {
     name: "Memory Card",
     link: "https://memory-card-neil.vercel.app/",
