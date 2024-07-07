@@ -15,6 +15,7 @@ import signUp2 from "./projects_img/second-sign-up-form.png";
 import cvApp from "./projects_img/cv-app.png";
 import memoryCard from "./projects_img/memory-card.png";
 import shoppingCart from "./projects_img/shopping-cart.png";
+import todoApp from "./projects_img/todo-app.png";
 
 export class Project {
   constructor(p) {
@@ -77,11 +78,11 @@ export const projects = [
     pictureLink: shoppingCart,
   },
   {
-    name: "Memory Card",
-    link: "https://memory-card-neil.vercel.app/",
-    githubLink: "https://github.com/blackbird410/memory-card",
-    description: "A memory card game",
-    pictureLink: memoryCard,
+    name: "Todo App",
+    link: "https://neil-todo-app.vercel.app/",
+    githubLink: "https://github.com/blackbird410/todo-app",
+    description: "A task management app created using React",
+    pictureLink: todoApp,
   },
   {
     name: "CV App",
@@ -89,6 +90,13 @@ export const projects = [
     githubLink: "https://github.com/blackbird410/cv-application",
     description: "A customizable cv application",
     pictureLink: cvApp,
+  },
+  {
+    name: "Memory Card",
+    link: "https://memory-card-neil.vercel.app/",
+    githubLink: "https://github.com/blackbird410/memory-card",
+    description: "A memory card game",
+    pictureLink: memoryCard,
   },
   {
     name: "Weather App",
