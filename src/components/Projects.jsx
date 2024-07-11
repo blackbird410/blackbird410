@@ -34,21 +34,24 @@ function ProjectCard({
 
 export default function Projects() {
     return (
-        <div className="text-gray-600 font-body grid md:grid-cols-3">
+        <div className="body">
             <Navbar links={getLinks("Projects")}/>
-            <div className="main mt-8 grid lg:grid-cols-3 border-gray-200 gap-10">
-                {
-                    projects.map(p => 
-                        <ProjectCard 
-                            key={p.name}
-                            title={p.name} 
-                            link={p.link}
-                            description={p.description}
-                            picture={p.pictureLink}
-                            ghLink={p.githubLink ? p.githubLink : getRepoLink(p)}
-                        />
-                    )
-                }
+            <div className="main">
+                <h1 className="text-4xl text-center">My Projects</h1>
+                <div className="max-h-svh overflow-y-scroll mt-8 grid lg:grid-cols-3 border-gray-200 gap-10">
+                    {
+                        projects.map(p => 
+                            <ProjectCard 
+                                key={p.name}
+                                title={p.name} 
+                                link={p.link}
+                                description={p.description}
+                                picture={p.pictureLink}
+                                ghLink={p.githubLink ? p.githubLink : getRepoLink(p)}
+                            />
+                        )
+                    }
+                </div>
             </div>
         </div>
     );

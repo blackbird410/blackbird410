@@ -52,8 +52,8 @@ export default function Icon({ type }) {
                 </svg>
             }
 
-            {type === "Github" && 
-                <ion-icon name="logo-github"></ion-icon>
+            {["Github", "Linkedin"].includes(type) && 
+                <ion-icon name={`logo-${type.toLowerCase()}`}></ion-icon>
             }
 
             {type === "Site" && 

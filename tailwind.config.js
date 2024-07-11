@@ -16,6 +16,15 @@ module.exports = {
             fontFamily: {
                 body: ['Nunito'],
             },
+            keyframes: {
+                appear: {
+                    '0%': { opacity: '0.25'},
+                    '100%': {opaciti: '1'},
+                } 
+            },
+            animation: {
+                appear: 'appear 1s ease-in-out',
+            }
         },
         screens: {
             'sm': '640px',

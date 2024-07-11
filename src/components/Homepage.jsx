@@ -62,14 +62,14 @@ export function getLinks(page) {
 export default function Homepage() {
 
     return (
-        <div className="text-gray-600 font-body grid md:grid-cols-3">
+        <div className="body">
             <Navbar links={getLinks("Home")} />
             
             <div className="main flex flex-col justify-between items-start gap-8 lg:h-screen">
                 <div className="flex flex-col gap-y-3 items-start">
                     <div>
-                        <h1 className="text-gray-400 text-4xl font-semibold">Hello! I'm</h1>
-                        <h1 className="text-gray-700 text-6xl font-semibold">Neil Taison Rigaud</h1>
+                        <h1 className="text-gray-400 text-3xl font-semibold">Hello! I'm</h1>
+                        <h1 className="text-gray-700 text-4xl font-semibold">Neil Taison Rigaud</h1>
                     </div>
                     <div className="text-xl">Computer Science student at NDHU and Web Developper.</div>
                     <a className="text-primary btn border-primary md:border-2 hover:bg-primary hover:text-white flex p-2 gap-3 rounded transition ease-out duration-500 cursor-pointer">
@@ -81,7 +81,7 @@ export default function Homepage() {
 
                 <div className="flex flex-col gap-3">
                     <h1 className="text-3xl font-bold">My Services</h1>
-                    <span className="text-4xl font-thin">Service Provided For My Clients.</span>
+                    <span className="text-2xl font-thin">Service Provided For My Clients.</span>
                     <div className="flex flex-col bg-gray-200 p-3 mt-4 gap-4">
                         {serviceList.map(s => 
                             <Service 
