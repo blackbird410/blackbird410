@@ -1,6 +1,6 @@
 # 💫 About Me:
 - 🔭 Working on The Odin Project curriculum
-- 🌱 Learning React
+- 🌱 Learning frontend web development
 - Looking to collaborate on open source projects.
 
 # 💻 Tech Stack:
