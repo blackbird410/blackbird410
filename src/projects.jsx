@@ -17,57 +17,12 @@ import memoryCard from "./projects_img/memory-card.png";
 import shoppingCart from "./projects_img/shopping-cart.png";
 import todoApp from "./projects_img/todo-app.png";
 
-export class Project {
-  constructor(p) {
-    this.wrapper = document.createElement("div");
-    this.infoWrapper = document.createElement("div");
-    this.img = document.createElement("div");
-    this.name = document.createElement("h3");
-    this.description = document.createElement("p");
-    this.githubLink = document.createElement("a");
-    this.githubLogo = document.createElement("ion-icon");
-    this.projectLink = document.createElement("a");
-    this.projectLogo = document.createElement("ion-icon");
-
-    this.wrapper.className = "project-wrapper";
-    this.infoWrapper.className = "project-info-wrapper";
-
-    const image = document.createElement("img");
-    image.src = p.pictureLink;
-    this.img.appendChild(image);
-    this.img.className = "project-image";
-
-    this.name.textContent = p.name;
-    this.description.textContent = p.description;
-
+export const getRepoLink = (p) => {
     let repoLink = p.link.split("blackbird410.github.io");
-    repoLink = p.link.match("vercel")
+    return p.link.match("vercel")
       ? p.githubLink
       : `${repoLink[0]}github.com/blackbird410${repoLink[1]}`;
-
-    this.githubLink.className = "github-link";
-    this.githubLink.href = repoLink;
-    this.githubLink.target = "_blank";
-    this.githubLogo.className = "logo github";
-    this.githubLogo.name = "logo-github";
-    this.githubLink.appendChild(this.githubLogo);
-
-    this.projectLink.className = "project-link";
-    this.projectLink.href = p.link;
-    this.projectLink.target = "_blank";
-    this.projectLogo.className = "logo open";
-    this.projectLogo.name = "open-outline";
-    this.projectLink.appendChild(this.projectLogo);
-
-    this.wrapper.appendChild(this.img);
-    this.infoWrapper.appendChild(this.name);
-    this.infoWrapper.appendChild(this.githubLink);
-    this.infoWrapper.appendChild(this.projectLink);
-    this.infoWrapper.appendChild(this.description);
-    this.wrapper.appendChild(this.infoWrapper);
-  }
-}
-export let projImgDir = "./projects_img/";
+} 
 
 export const projects = [
   {
@@ -186,12 +141,3 @@ export const projects = [
     pictureLink: rps,
   },
 ];
-
-export const addProjects = () => {
-  const wrapper = document.querySelector(".projects-wrapper");
-
-  projects.forEach((p) => {
-    let project = new Project(p);
-    wrapper.appendChild(project.wrapper);
-  });
-};
