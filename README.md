@@ -12,6 +12,3 @@
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=blackbird410&theme=dark&hide_border=false">
 </div>
 <br/>
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=blackbird410&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact">
-</div>
