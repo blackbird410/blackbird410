@@ -1,4 +1,3 @@
-# 💫 About Me:
 - 🔭 Working on Brainhub App
 - Looking to collaborate on open source projects
 
