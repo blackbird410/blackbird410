@@ -1,7 +1,7 @@
 # Neil Taison Rigaud
 Sophomore in the department of Computer Science at NDHU. 
 
-SWE and Full stack developer with extensive skills in using:
+SWE and Full Stack Developer with extensive skills in using:
 - Frameworks: NodeJS, ReactJS, NextJS, Tailwind CSS, TypeScript
 - Programming languages: C/C++, JavaScript, Python and Golang
 - Databases: PostgreSQL, MongoDB
