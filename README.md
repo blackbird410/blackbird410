@@ -5,7 +5,7 @@ SWE and Full stack developer with extensive skills in using:
 - Frameworks: NodeJS, ReactJS, NextJS, Tailwind CSS, TypeScript
 - Programming languages: C/C++, JavaScript, Python and Golang
 - Databases: PostgreSQL, MongoDB
-- Dev. Tools / OS: Git, Github, Docker, Linux
+- Dev. Tools / OS: Git, Github, Docker, VSCode, Neovim, Linux
 
 I stay updated with the latest technologies in order to extend my skillset.
 
