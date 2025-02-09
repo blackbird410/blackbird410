@@ -1,5 +1,5 @@
 # Neil Taison Rigaud
-CS Student at NDHU with skills in using:
+CS Student at NDHU experienced in using:
 - Frameworks: NodeJS, ReactJS, NextJS, Tailwind CSS, TypeScript
 - Programming languages: C/C++, JavaScript, Python and Golang
 - Databases: PostgreSQL, MySQL, MongoDB
