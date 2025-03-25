@@ -14,4 +14,6 @@ CS Student at NDHU experienced in:
   - BeautifulSoup, Pandas Dataframe, Jupyter Notebook
   - Bash shell scripting
 
-[comment]: [![Neil' GitHub stats](https://github-readme-stats-ashen-six-34.vercel.app/api?username=blackbird410&count_private=true&hide=issues&show_icons=true)](https://neil410.vercel.app)
+<!--
+[![Neil' GitHub stats](https://github-readme-stats-ashen-six-34.vercel.app/api?username=blackbird410&count_private=true&hide=issues&show_icons=true)](https://neil410.vercel.app)
+-->
